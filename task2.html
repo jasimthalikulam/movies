@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class=" grid grid-cols-5 sticky top-0 z-50 border border-gray-300 shadow-md">
+     <div class ="flex bg-white font-bold leading-10 text-lg col-span-1 border-r border-spacing-2 py-2 px-10 border-gray-400">
+         <img src="tl-pic.png" alt="" class="w-10 h-10 rounded-md">
+         &nbsp;&nbsp;&nbsp;&nbsp;Movies
+     </div>
+     <div class="col-span-3 bg-white">
+     </div>
+     <div class ="justify-end bg-white font-light text-lg col-span-1 border-l border-spacing-2 py-2 px-10 border-gray-400 flex">
+        <i class="fa-regular fa-magnifying-glass leading-10 px-2"></i>
+        <form id='srcbar'>
+        <input type="text" class="text-gray-400 border-b-2" placeholder="Quick Search " id = 'search'>
+      </form>
+     </div>
+   </div>
+  <div class="grid grid-cols-5 relative">
+      <div class = " bg-gray-200 col-span-1 border-gray-400  border-x ">
+      <div class="fixed ">
+          <nav class="flex pb-96">
+              <ul class="ml-6 my-6">
+                  <li class="bg-white py-2 pl-5 pr-32 border-gray-400 border">
+                      <a href="#">
+                          <span class="font-light text-base font-sans ">Search Results</span>
+                      </a>
+                  </li>
+                  <li class="py-2 pl-5 pr-32">
+                      <a href="#">
+                          <span class="font-light text-base font-sans ">All Team</span>
+                      </a>
+                  </li>
+                  <li class="py-2 pl-5 pr-32">
+                      <a href="#">
+                          <span class="font-light text-base font-sans ">Core</span>
+                      </a>
+                  </li>
+                  <li class="py-2 pl-5 pr-32">
+                      <a href="#">
+                          <span class="font-light text-base font-sans ">Developers</span>
+                      </a>
+                  </li>
+                  <li class="py-2 pl-5 pr-32">
+                      <a href="#">
+                          <span class="font-light text-base font-sans ">Designers</span>
+                      </a>
+                  </li>
+                  <li class="py-2 pl-5 pr-32">
+                      <a href="#">
+                          <span class="font-light text-base font-sans ">Mentors</span>
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+          <div>
+            <a href="#" class="bg-black text-white rounded-xl px-10 py-4 mx-16">
+                + Add
+            </a>
+          </div>
+      </div>
+      </div>
+      <main class=" col-span-4 bg-slate-100 p-10 pr-20 grid grid-cols-3 gap-5 " id='card'>
+              <div class = "shadow-lg overflow-hidden  bg-white rounded w-60">
+                <div class="flex justify-center"> 
+                  <img class=" block border border-gray-300 w-full relative " src="https://m.media-amazon.com/images/M/MV5BYmMxZWRiMTgtZjM0Ny00NDQxLWIxYWQtZDdlNDNkOTEzYTdlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="movie pic" />
+                  <p class="absolute flex pt-64 text-white w-40 justify-center text-2xl">Thor:Love and Thunder</p>
+          </div>
+          
+        </div>
+      </main>
+  </div>
+  <script src ="script.js"></script>
+</body>
+</html>
